@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1046561162514",
+    "project_id": "fishscaleplus",
+    "storage_bucket": "fishscaleplus.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046561162514:android:502297511cd62a1c629fcb",
+        "android_client_info": {
+          "package_name": "com.fishscal.plisfo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUBeQQEp-fASpUE89zRK1LiQ_-FoxUkHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

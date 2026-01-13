@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fish_scale_plus_graph"
+    app:startDestination="@id/fishScalePlusLoadFragment">
+
+    <fragment
+        android:id="@+id/fishScalePlusLoadFragment"
+        android:name="com.fishscal.plisfo.trng.presentation.ui.load.FishScalePlusLoadFragment"
+        android:label="FishScalePlusLoadFragment" >
+        <action
+            android:id="@+id/action_fishScalePlusLoadFragment_to_fishScalePlusV"
+            app:destination="@id/fishScalePlusV"
+            app:popUpTo="@id/fish_scale_plus_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fishScalePlusV"
+        android:name="com.fishscal.plisfo.trng.presentation.ui.view.FishScalePlusV"
+        android:label="FishScalePlusV" />
+</navigation>
