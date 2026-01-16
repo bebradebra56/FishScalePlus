@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.webkit.CookieManager
 import android.webkit.ValueCallback
 import android.widget.FrameLayout
@@ -15,6 +16,9 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsAnimationCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.fishscal.plisfo.trng.presentation.app.FishScalePlusApplication
@@ -92,7 +96,6 @@ class FishScalePlusV : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         Log.d(FishScalePlusApplication.FISH_SCALE_PLUS_MAIN_TAG, "onViewCreated")
         if (fishScalePlusDataStore.fishScalePlusViList.isEmpty()) {
             fishScalePlusDataStore.fishScalePlusView = FishScalePlusVi(requireContext(), object :
